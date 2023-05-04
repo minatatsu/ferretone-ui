@@ -64,6 +64,7 @@
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "eslint": "^8.39.0",
     "prop-types": "^15.8.1",
     "stylelint": "^15.6.1",
     "stylelint-config-prettier": "^9.0.5",
