@@ -1,0 +1,132 @@
+@use 'variables/color' as color;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // width: 100%;
+  padding-inline: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  border-radius: 50vh;
+
+  //アイコン有りの場合、アイコンとテキストに余白を設ける
+  :first-child {
+    margin-right: 4px;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+// button style
+.primary {
+  color: color.$white;
+  background-color: color.$blue-600;
+
+  svg {
+    fill: color.$white;
+  }
+
+  &:hover {
+    background-color: color.$blue-800;
+  }
+
+  &:disabled {
+    color: color.$gray-100;
+    background-color: color.$blue-400;
+  }
+}
+
+.secondary {
+  color: color.$blue-800;
+  background-color: color.$white;
+  border: 1px solid color.$blue-800;
+
+  svg {
+    fill: color.$blue-800;
+  }
+
+  &:hover {
+    background-color: color.$blue-400;
+  }
+
+  &:disabled {
+    color: color.$gray-200;
+    background-color: color.$white;
+    border-color: color.$gray-200;
+  }
+}
+
+.tertiary {
+  color: color.$blue-800;
+  background-color: transparent;
+
+  &:disabled {
+    color: color.$gray-200;
+  }
+}
+
+.success {
+  color: color.$white;
+  background-color: color.$green-600;
+
+  svg {
+    fill: color.$white;
+  }
+}
+
+.danger {
+  color: color.$red-800;
+  background-color: color.$white;
+  border: 1px solid color.$red-800;
+
+  svg {
+    fill: color.$red-800;
+  }
+
+  &:hover {
+    background-color: color.$red-100;
+  }
+
+  &:disabled {
+    color: color.$red-400;
+    background-color: color.$white;
+    border-color: color.$red-400;
+  }
+}
+
+// button size
+.small {
+  height: 30px;
+  font-size: 12px;
+
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.medium {
+  height: 40px;
+  font-size: 14px;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.large {
+  height: 48px;
+  font-size: 16px;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}

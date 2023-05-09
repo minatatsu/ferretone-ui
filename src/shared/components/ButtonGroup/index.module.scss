@@ -1,0 +1,26 @@
+.list {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+  list-style-type: none;
+}
+
+.listitem {
+  min-width: fit-content;
+}
+
+.small {
+  flex-basis: 120px;
+}
+
+.medium {
+  flex-basis: 140px;
+}
+
+.center {
+  justify-content: center;
+}
+
+.right {
+  justify-content: end;
+}
